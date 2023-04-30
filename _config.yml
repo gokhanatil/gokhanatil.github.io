@@ -28,9 +28,6 @@ external:                  # shows a footer with social links - for available ic
   - {title: Twitter, icon: twitter, url: "https://twitter.com/gokhanatil"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
-comments:
-  disqus_shortname: "www-gokhanatil-com"    # see https://disqus.com/
-
 plugins:
  - jekyll-feed
  - jekyll-gist
