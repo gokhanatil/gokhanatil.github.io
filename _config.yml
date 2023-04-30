@@ -1,0 +1,38 @@
+title: "Gokhan Atil's Technology Blog"
+author: "Gokhan Atil"
+description: "Copyright &copy 2008-2023 Gokhan Atil."
+permalink: /:title/
+lang: "en"
+excerpt_separator: "<!--more-->"
+date_format: "%B %d, %Y"
+paginate: 4
+paginate_path: /page/:num/
+
+# Layout
+
+show_excerpts: true        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+show_title: true           # always keep the title visible
+minimal: true
+
+# Menu
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "publications.md" } 
+  - {file: "archive.html" } 
+  - {file: "about.md" }
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Linkedin, icon: linkedin, url: "https://www.linkedin.com/in/gokhanatil"}
+  - {title: Twitter, icon: twitter, url: "https://twitter.com/gokhanatil"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
+comments:
+#  disqus_shortname: ""    # see https://disqus.com/
+#  isso_domain: ""         # see https://posativ.org/isso/
+
+plugins:
+ - jekyll-feed
+ - jekyll-gist
+ - jekyll-paginate

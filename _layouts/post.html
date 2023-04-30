@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+  {% include meta.html post=page %}
+  {{ content }}
+  {% if page.comments != false and site.comments.isso or site.comments.disqus %}
+    <hr>
+    {% if site.comments.isso_domain %}<div id="isso-thread"></div>{% endif %}
+    {% if site.comments.disqus_shortname %}<div id="disqus_thread"></div>{% endif %}
+    <noscript>Please enable JavaScript to view comments.</noscript>
+  {% endif %}
+<div>
+<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" ><img src="/assets/linkedin-share-button.png"></a>
+<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank" ><img src="/assets/twitter-share-button.png"></a>  
+</div> 
+</article>
