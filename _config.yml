@@ -7,6 +7,7 @@ excerpt_separator: "<!--more-->"
 date_format: "%B %d, %Y"
 paginate: 4
 paginate_path: /page/:num/
+comments: true
 
 # Layout
 
