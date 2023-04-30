@@ -29,8 +29,7 @@ external:                  # shows a footer with social links - for available ic
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
-#  disqus_shortname: "www-gokhanatil-com"    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
+  disqus_shortname: "www-gokhanatil-com"    # see https://disqus.com/
 
 plugins:
  - jekyll-feed
