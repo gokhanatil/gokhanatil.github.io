@@ -6,6 +6,11 @@ comments: true
 <article>
   {% include meta.html post=page %}
   {{ content }}
+  <div>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" ><img src="/assets/linkedin-share-button.png"></a>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank" ><img src="/assets/twitter-share-button.png"></a>  
+  </div>   
+  
   {% if page.comments != false %}
     <hr>
     <div id="disqus_thread"></div>
@@ -23,8 +28,5 @@ comments: true
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   {% endif %}
-<div>
-<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" ><img src="/assets/linkedin-share-button.png"></a>
-<a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank" ><img src="/assets/twitter-share-button.png"></a>  
-</div> 
+
 </article>
