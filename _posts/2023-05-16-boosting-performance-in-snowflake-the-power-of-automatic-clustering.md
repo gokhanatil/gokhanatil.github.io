@@ -7,11 +7,11 @@ When it comes to managing large data sets in Snowflake, Automatic Clustering is 
 
 ![tables-clustered](/assets/tables-clustered.png)
 
-Snowflake stores the data in your tables into micro-partitions. These are small, contiguous units of storage that Snowflake can use to quickly access the data you need. Snowflake maintains clustering metadata for the micro-partitions in a table, including min and max values of columns in the micro-partition. When you run a query, Snowflake examines the filters to determine which partitions contain the relevant data. For example, if a query filters data by a specific date range, Snowflake can exclude partitions that do not contain data within that range. This is called "partition pruning". Partition pruning is particularly effective for large and complex data sets, where the amount of data that needs to be scanned can be prohibitively high. 
+Snowflake stores data in the tables as micro-partitions. These are small, contiguous units of storage that Snowflake can use to quickly access the data you need. Snowflake maintains clustering metadata for the micro-partitions in a table, including min and max values of columns in the micro-partition. When you run a query, Snowflake examines the filters to determine which partitions contain the relevant data. For example, if a query filters data by a specific date range, Snowflake can exclude partitions that do not contain data within that range. This is called "partition pruning". Partition pruning is particularly effective for large and complex data sets, where the amount of data that needs to be scanned can be prohibitively high. 
 
 <!--more-->
 
-## Why is Automatic Clustering important and how exactly does Automatic Clustering help improve performance? 
+### Why is Automatic Clustering important and how exactly does Automatic Clustering help improve performance? 
 
 Automatic Clustering continually manages reclustering operations, and redistributse data to micro-partitions based on clustering keys. This will help Snowflake to read fewer micro-partitions to access the relevant data, resulting in faster query processing times and lower costs. When similar data is grouped together, compression algorithms can also work more effectively, further reducing the amount of data that needs to be scanned and processed.
 
