@@ -4,7 +4,9 @@ permalink: "/about/"
 layout: page
 ---
 
-As a certified SnowPro Architect and Data Engineer, AWS Big Data Specialist, and Oracle Certified Professional (OCP) for EBS R12, Oracle 10g and 11g, I have a wealth of experience in the technology industry. I am also proud to be a co-author of the book "Expert Oracle Enterprise Manager 12c," published by Apress. My contributions to the Oracle users community have been recognized with the prestigious Oracle ACE award in 2011 and Oracle ACE Director award in 2016. I am a founding member and vice president of the Turkish Oracle User Group (TROUG) and have been invited to present at various international conferences, including Oracle Open World in San Francisco. 
+As an accomplished professional with extensive experience in the technology industry, I hold certifications as a SnowPro Architect, Data Engineer, AWS Big Data Specialist, and Oracle Certified Professional (OCP) for EBS R12, Oracle 10g, and 11g. I take pride in co-authoring the book "Expert Oracle Enterprise Manager 12c," which was published by Apress. My contributions to the Oracle users community have been recognized through prestigious awards, including the Oracle ACE award in 2011 and the Oracle ACE Director award in 2016.
+
+I am honored to be a founding member and currently serve as the vice president of the Turkish Oracle User Group (TROUG). Furthermore, I have been invited to present at esteemed international conferences, including Oracle Open World in San Francisco.
 
 ### PUBLIC APPEARANCES
 
