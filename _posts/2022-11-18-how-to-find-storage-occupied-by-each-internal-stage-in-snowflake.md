@@ -18,17 +18,20 @@ Here is the step-by-step explanation of the above script:
 * Line 3: A variant variable to hold the list of stages and sizes
 * Lines 5: Total_size will store the size of a stage
 * Lines 6: This query will convert the variant data to a table with two columns (stage_name and total_bytes)
-* Lines 7-9) Defining a cursor to list all internal stages
-* Line 10) Begin of the anonymous code block
-* Line 11) Initializing rpt variable as an empty array
-* Line 12) A loop for each record in cursor (each stage in the database)
-* Line 13) The name of the stagen is assigned to the name variable 
-* Line 14) Execute the LS command for the stage and store the result in the RES variable
-* Line 15) Open a new cursor to process the rows in the RES variable
-* Line 16) Total size is 0
-* Lines 17-19) The size of each file in the stage, is added to the total_size variable
-* Line 20) Add the stage name and the total_size as a new element to the RPT array
-* Line 21) Repeat this process for each stage. The loops was stated on line 12
-* Line 22) Convert the array to a table with two columns (stage_name and total_bytes)
-* Line 23) Return the result as a table
-* Line 24) Ends the anonymous block
+* Lines 7-10) Defining a cursor to list all internal stages
+* Line 11) Begin of the anonymous code block
+* Line 12) Initializing rpt variable as an empty array
+* Line 13) A loop for each record in cursor (each stage in the database)
+* Line 14) Begining of the block that we handle exceptions
+* Line 15) The name of the stagen is assigned to the name variable 
+* Line 16) Execute the LS command for the stage and store the result in the RES variable
+* Line 17) Open a new cursor to process the rows in the RES variable
+* Line 18) Total size is 0
+* Lines 19-21) The size of each file in the stage, is added to the total_size variable
+* Line 22) Add the stage name and the total_size as a new element to the RPT array
+* Line 23-25) Exception handling section to return -1 as the size if we can't access the stage
+* Line 26) End ot the block that we handle exceptions
+* Line 27) Repeat this process for each stage. The loops was stated on line 12
+* Line 28) Convert the array to a table with two columns (stage_name and total_bytes)
+* Line 29) Return the result as a table
+* Line 30) Ends the anonymous block
