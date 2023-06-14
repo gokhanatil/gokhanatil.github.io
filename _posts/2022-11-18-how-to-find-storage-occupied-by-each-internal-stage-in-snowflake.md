@@ -5,7 +5,7 @@ layout: post
 
 The account usage view has two views related to stages: STAGES and STAGE_STORAGE_USAGE_HISTORY. The STAGES view helps list all the stages defined in your account but does not show how much storage each stage consumes. The STAGE_STORAGE_USAGE_HISTORY view shows the total usage of all stages but doesn't show detailed use. 
 
-I wrote the following script to list the internal stages (and their occupied storage) in the active database:
+I wrote the following script to list the internal stages (and their occupied storage) for all available databases:
 
 {% gist abbc604b0e69ff0c545d014c167b24ba %}
 
