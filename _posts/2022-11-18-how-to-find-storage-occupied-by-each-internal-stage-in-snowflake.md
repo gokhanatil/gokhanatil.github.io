@@ -29,7 +29,7 @@ Here is the step-by-step explanation of the above script:
 * Line 18) Total size is 0
 * Lines 19-21) The size of each file in the stage, is added to the total_size variable
 * Line 22) Add the stage name and the total_size as a new element to the RPT array
-* Line 23-25) Exception handling section to return -1 as the size if we can't access the stage
+* Lines 23-25) Exception handling section to return -1 as the size if we can't access the stage
 * Line 26) End ot the block that we handle exceptions
 * Line 27) Repeat this process for each stage. The loops was stated on line 12
 * Line 28) Convert the array to a table with two columns (stage_name and total_bytes)
