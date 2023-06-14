@@ -23,7 +23,7 @@ Here is the step-by-step explanation of the above script:
 * Line 12) Initializing rpt variable as an empty array
 * Line 13) A loop for each record in cursor (each stage in the database)
 * Line 14) Begining of the block that we handle exceptions
-* Line 15) The name of the stagen is assigned to the name variable 
+* Line 15) The name of the stage is assigned to the name variable 
 * Line 16) Execute the LS command for the stage and store the result in the RES variable
 * Line 17) Open a new cursor to process the rows in the RES variable
 * Line 18) Total size is 0
