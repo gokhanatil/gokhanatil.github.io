@@ -43,7 +43,7 @@ l_options: A flag to specify to control the output of the report. The default va
 
 One of the important points is, we need to determine the database ID, instance number, and snapshots dynamically to be able to define it as a job in OEM Grid Control. I query DBA_HIST_SNAPSHOT to find the beginning and end snapshot IDs according to variables starttime and endtime. I read the database ID and instance number from GV$DATABASE.
 
-Here’s the simple PL/SQL block to create an **AWR report** in HTML and mail it:
+Here’s a simple PL/SQL script to create an **AWR report** in HTML and mail it:
 
 {% gist eb4b4ea01771ca350122fc84d7dde778 %}
 
